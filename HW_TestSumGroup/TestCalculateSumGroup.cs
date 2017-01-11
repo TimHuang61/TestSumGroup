@@ -6,8 +6,10 @@ using NUnit.Framework;
 namespace HW_TestSumGroup
 {
     [TestFixture]
-    public class TestClass
+    public class TestCalculateSumGroup
     {
+        private List<Product> products;
+
         [SetUp]
         public void Init()
         {
@@ -26,8 +28,6 @@ namespace HW_TestSumGroup
                 new Product {Id = 11, Cost = 11, Revenue = 21, SellPrice = 31}
             };
         }
-
-        private List<Product> products;
 
         [TestCase(0)]
         [TestCase(-1)]
